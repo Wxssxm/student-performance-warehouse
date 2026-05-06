@@ -81,7 +81,7 @@ SELECT
     COUNT(*)                          AS exam_count,
     ROUND(AVG(g.grade_value), 2)      AS avg_grade
 FROM warehouse.fact_grades g
-JOIN warehouse.dim_date d USING (date_sk)
+JOIN warehouse.dim_date d ON d.date_sk = g.exam_date_sk
 GROUP BY d.year, d.month, d.month_name
 ORDER BY d.year, d.month;
 
