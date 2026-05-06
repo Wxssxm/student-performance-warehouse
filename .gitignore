@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual env
+.venv/
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Project
+.env
+.env.local
+*.log
+
+# Build
+dist/
+build/
+
+# Docker volumes (when bind-mounted locally)
+postgres-data/
+metabase-data/
